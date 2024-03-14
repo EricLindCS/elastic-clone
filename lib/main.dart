@@ -209,7 +209,7 @@ class _ElasticState extends State<Elastic> {
     );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Elastic',
+      title: 'Flame of The West',
       theme: theme,
       home: DashboardPage(
         preferences: widget.preferences,
