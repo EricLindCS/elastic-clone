@@ -99,7 +99,7 @@ class _SettingsDialogState extends State<SettingsDialog> {
 
   List<Widget> _generalSettings() {
     Color currentColor = Color(widget.preferences.getInt(PrefKeys.teamColor) ??
-        Colors.blueAccent.value);
+        Colors.redAccent.shade700.value);
     return [
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

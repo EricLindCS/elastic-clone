@@ -198,7 +198,7 @@ class Elastic extends StatefulWidget {
 
 class _ElasticState extends State<Elastic> {
   late Color teamColor = Color(
-      widget.preferences.getInt(PrefKeys.teamColor) ?? Colors.blueAccent.value);
+      widget.preferences.getInt(PrefKeys.teamColor) ?? Colors.redAccent.shade700.value);
 
   @override
   Widget build(BuildContext context) {

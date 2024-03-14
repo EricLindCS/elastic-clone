@@ -1279,6 +1279,19 @@ class _DashboardPageState extends State<DashboardPage> with WindowListener {
             height: 24.0,
           ),
         ),
+        VerticalDivider(
+                color: Colors.white,
+                thickness: 2, // Adjust thickness as needed
+                indent: 10,
+                endIndent: 10,
+              ),
+        Center(
+          child: Image.asset(
+            'assets/logos/logo_ftw_full.png',
+            width: 40.0,
+            height: 24.0,
+          ),
+        ),
         const SizedBox(width: 10),
         // File
         SubmenuButton(
