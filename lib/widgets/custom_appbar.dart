@@ -16,7 +16,7 @@ class CustomAppBar extends AppBar {
 
   CustomAppBar(
       {super.key,
-      this.titleText = 'Elastic',
+      this.titleText = 'Flame of the West',
       this.appBarColor,
       this.onWindowClose,
       required this.menuBar})

@@ -42,6 +42,8 @@ import 'package:elastic_dashboard/widgets/nt_widgets/single_topic/toggle_button.
 import 'package:elastic_dashboard/widgets/nt_widgets/single_topic/toggle_switch.dart';
 import 'package:elastic_dashboard/widgets/nt_widgets/single_topic/voltage_view.dart';
 
+import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/flywheel_widget.dart';
+
 class NTWidgetBuilder {
   static final Map<String, NTWidget Function({Key? key})> _widgetNameBuildMap =
       {};
@@ -91,6 +93,7 @@ class NTWidgetBuilder {
     _modelNameBuildMap.addAll({
       AccelerometerWidget.widgetType: AccelerometerModel.new,
       SwerveDriveWidget.widgetType: BasicSwerveModel.new,
+      FlywheelViewWidget.widgetType: BasicFlywheelModel.new,
       CameraStreamWidget.widgetType: CameraStreamModel.new,
       ComboBoxChooser.widgetType: ComboBoxChooserModel.new,
       'String Chooser': ComboBoxChooserModel.new,
@@ -137,6 +140,7 @@ class NTWidgetBuilder {
     _modelJsonBuildMap.addAll({
       AccelerometerWidget.widgetType: AccelerometerModel.fromJson,
       SwerveDriveWidget.widgetType: BasicSwerveModel.fromJson,
+      FlywheelViewWidget.widgetType: BasicFlywheelModel.fromJson,
       CameraStreamWidget.widgetType: CameraStreamModel.fromJson,
       ComboBoxChooser.widgetType: ComboBoxChooserModel.fromJson,
       CommandSchedulerWidget.widgetType: CommandSchedulerModel.fromJson,
@@ -213,6 +217,7 @@ class NTWidgetBuilder {
       SplitButtonChooser.widgetType: SplitButtonChooser.new,
       SubsystemWidget.widgetType: SubsystemWidget.new,
       SwerveDriveWidget.widgetType: SwerveDriveWidget.new,
+      FlywheelViewWidget.widgetType: FlywheelViewWidget.new,
       ThreeAxisAccelerometer.widgetType: ThreeAxisAccelerometer.new,
       '3AxisAccelerometer': ThreeAxisAccelerometer.new,
       Ultrasonic.widgetType: Ultrasonic.new,
@@ -238,6 +243,7 @@ class NTWidgetBuilder {
       RobotPreferences.widgetType: _normalSize * 2,
       SubsystemWidget.widgetType: _normalSize * 2,
       SwerveDriveWidget.widgetType: _normalSize * 2,
+      FlywheelViewWidget.widgetType: _normalSize * 3,
       Ultrasonic.widgetType: _normalSize * 2,
       YAGSLSwerveDrive.widgetType: _normalSize * 2,
     });
@@ -265,6 +271,7 @@ class NTWidgetBuilder {
       RelayWidget.widgetType: _normalSize * 2,
       RobotPreferences.widgetType: _normalSize * 2,
       SwerveDriveWidget.widgetType: _normalSize * 2,
+      FlywheelViewWidget.widgetType: _normalSize * 2,
       VoltageView.widgetType: _normalSize,
     });
 
@@ -286,7 +293,7 @@ class NTWidgetBuilder {
       RobotPreferences.widgetType: 2,
       SubsystemWidget.widgetType: 2,
       SwerveDriveWidget.widgetType: 2,
-      Ultrasonic.widgetType: 2,
+      FlywheelViewWidget.widgetType: 2,
     });
 
     _defaultHeightMap.addAll({
@@ -303,6 +310,7 @@ class NTWidgetBuilder {
       RelayWidget.widgetType: 2,
       RobotPreferences.widgetType: 3,
       SwerveDriveWidget.widgetType: 2,
+      FlywheelViewWidget.widgetType: 2,
     });
 
     _initialized = true;
