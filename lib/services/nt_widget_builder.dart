@@ -243,7 +243,7 @@ class NTWidgetBuilder {
       RobotPreferences.widgetType: _normalSize * 2,
       SubsystemWidget.widgetType: _normalSize * 2,
       SwerveDriveWidget.widgetType: _normalSize * 2,
-      FlywheelViewWidget.widgetType: _normalSize * 3,
+      FlywheelViewWidget.widgetType: _normalSize * 2,
       Ultrasonic.widgetType: _normalSize * 2,
       YAGSLSwerveDrive.widgetType: _normalSize * 2,
     });
@@ -271,7 +271,7 @@ class NTWidgetBuilder {
       RelayWidget.widgetType: _normalSize * 2,
       RobotPreferences.widgetType: _normalSize * 2,
       SwerveDriveWidget.widgetType: _normalSize * 2,
-      FlywheelViewWidget.widgetType: _normalSize * 2,
+      FlywheelViewWidget.widgetType: _normalSize * 4,
       VoltageView.widgetType: _normalSize,
     });
 
